@@ -9,6 +9,7 @@ services:
       - redis
     environment:
       - QUEUE_HOST=redis
+      - WORKER_CONCURRENCY=20   
   redis:
     image: redis:7
     ports:
